@@ -1,0 +1,20 @@
+.about-section__grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 18px;
+}
+
+.about-section__grid > .resume,
+.about-section__grid > .skills {
+  grid-column: 1 / -1;
+}
+
+.about-section__grid > .bio {
+  min-height: 100%;
+}
+
+@media (max-width: 860px) {
+  .about-section__grid {
+    grid-template-columns: 1fr;
+  }
+}

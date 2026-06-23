@@ -1,0 +1,120 @@
+.site-shell {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  color: var(--color-text);
+  background:
+    radial-gradient(circle at 8% 10%, rgba(0, 169, 232, 0.22), transparent 28%),
+    radial-gradient(circle at 92% 18%, rgba(0, 212, 199, 0.18), transparent 30%),
+    radial-gradient(circle at 50% 88%, rgba(255, 114, 94, 0.12), transparent 26%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.85), rgba(244, 251, 255, 0.94)),
+    var(--color-bg);
+  transition:
+    color 260ms ease,
+    background 260ms ease;
+}
+
+.site-shell--dimmed {
+  --color-bg: #061d2b;
+  --color-surface: rgba(10, 48, 68, 0.78);
+  --color-surface-strong: rgba(10, 48, 68, 0.94);
+  --color-heading: #f4fbff;
+  --color-text: #c4d8e2;
+  --color-muted: #93aebc;
+  --color-border: rgba(170, 232, 255, 0.16);
+  --color-glow: rgba(0, 212, 199, 0.24);
+  --shadow-soft: 0 22px 64px rgba(0, 0, 0, 0.24);
+  --shadow-bright: 0 24px 72px rgba(0, 169, 232, 0.18);
+  background:
+    radial-gradient(circle at 8% 10%, rgba(0, 169, 232, 0.28), transparent 28%),
+    radial-gradient(circle at 92% 18%, rgba(0, 212, 199, 0.18), transparent 30%),
+    radial-gradient(circle at 50% 88%, rgba(255, 114, 94, 0.12), transparent 26%),
+    linear-gradient(180deg, rgba(6, 29, 43, 0.98), rgba(3, 16, 25, 0.98)),
+    var(--color-bg);
+}
+
+.site-shell::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(7, 42, 59, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(7, 42, 59, 0.045) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.72), transparent 82%);
+  content: '';
+}
+
+#main-content {
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+.section {
+  position: relative;
+  z-index: 2;
+}
+
+.site-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.site-shell--dimmed::before {
+  background-image:
+    linear-gradient(rgba(170, 232, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(170, 232, 255, 0.06) 1px, transparent 1px);
+}
+
+.site-shell--dimmed .panel,
+.site-shell--dimmed .project-card,
+.site-shell--dimmed .bento-grid-item,
+.site-shell--dimmed .skills__group,
+.site-shell--dimmed .skill-bar {
+  border-color: rgba(170, 232, 255, 0.16);
+  background:
+    linear-gradient(180deg, rgba(10, 48, 68, 0.92), rgba(6, 29, 43, 0.82)),
+    var(--color-surface);
+}
+
+.site-shell--dimmed .hero-section h1 {
+  background: linear-gradient(135deg, #f4fbff, #59d8ff 54%, var(--color-accent-2));
+  background-clip: text;
+}
+
+.site-shell--dimmed .hero-section__phrase,
+.site-shell--dimmed .hero-section__stats span,
+.site-shell--dimmed .personal-info div,
+.site-shell--dimmed .resume-item {
+  border-color: rgba(170, 232, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.site-shell--dimmed .hero-section__media {
+  border-color: rgba(170, 232, 255, 0.2);
+  background:
+    radial-gradient(circle at 50% 18%, rgba(0, 212, 199, 0.24), transparent 31%),
+    linear-gradient(145deg, rgba(11, 57, 80, 0.96), rgba(4, 23, 35, 0.86));
+}
+
+.site-shell--dimmed .hero-section__media figcaption,
+.site-shell--dimmed .project-card__preview,
+.site-shell--dimmed .project-mockup,
+.site-shell--dimmed .connect-section {
+  border-color: rgba(170, 232, 255, 0.16);
+  background:
+    linear-gradient(135deg, rgba(12, 60, 84, 0.92), rgba(6, 29, 43, 0.82)),
+    rgba(6, 29, 43, 0.86);
+}
+
+.site-shell--dimmed .button--ghost {
+  color: var(--color-heading);
+  border-color: rgba(170, 232, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.site-shell--dimmed .skill-bar__track {
+  background: rgba(255, 255, 255, 0.12);
+}

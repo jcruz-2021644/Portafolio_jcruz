@@ -1,0 +1,27 @@
+.bio {
+  display: grid;
+  gap: 14px;
+}
+
+.bio__highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.bio__highlights span {
+  min-height: 44px;
+  border: 1px solid rgba(0, 169, 232, 0.16);
+  border-radius: 999px;
+  padding: 8px 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-heading);
+  font-size: 0.86rem;
+  font-weight: 800;
+  line-height: 1.15;
+  text-align: center;
+  background: rgba(0, 169, 232, 0.08);
+}

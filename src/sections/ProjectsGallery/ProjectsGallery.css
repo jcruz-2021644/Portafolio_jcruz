@@ -1,0 +1,65 @@
+.gallery-section {
+  padding-top: 48px;
+}
+
+.project-mockup {
+  min-height: 180px;
+  border: 1px solid rgba(0, 169, 232, 0.16);
+  border-radius: 8px;
+  padding: 12px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 12px;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.55), transparent 24%),
+    linear-gradient(135deg, rgba(0, 169, 232, 0.28), rgba(0, 212, 199, 0.18));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.36);
+}
+
+.project-mockup__topbar {
+  display: flex;
+  gap: 6px;
+}
+
+.project-mockup__topbar span {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.project-mockup__screen {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-rows: repeat(2, minmax(46px, 1fr));
+  gap: 10px;
+}
+
+.project-mockup__screen span {
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 12px 28px rgba(7, 42, 59, 0.08);
+}
+
+.project-mockup__screen span:first-child {
+  grid-row: span 2;
+  background: linear-gradient(150deg, rgba(7, 42, 59, 0.9), rgba(0, 169, 232, 0.78));
+}
+
+.project-mockup__screen span:nth-child(3) {
+  background: linear-gradient(135deg, rgba(255, 114, 94, 0.78), rgba(255, 255, 255, 0.72));
+}
+
+.project-mockup--profile .project-mockup__screen,
+.project-mockup--responsive .project-mockup__screen {
+  grid-template-columns: 0.68fr 1fr;
+}
+
+.project-mockup--skills .project-mockup__screen span,
+.project-mockup--system .project-mockup__screen span {
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-2));
+}
+
+.project-mockup--code .project-mockup__screen span {
+  background: rgba(7, 42, 59, 0.88);
+}
