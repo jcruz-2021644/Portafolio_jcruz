@@ -16,6 +16,8 @@ export const personalInfo = {
     github: 'https://github.com/jcruz-2021644',
     instagram: 'https://www.instagram.com/andrexd_34/',
     facebook: 'https://www.facebook.com/jefry.yuman/',
+    whatsapp: 'https://wa.link/b3n3pa',
+    email: 'mailto:jefryyu67@gmail.com',
     linkedin: 'https://www.linkedin.com/in/jefry-cruz',
     computrabajo: 'https://www.computrabajo.com.gt/',
     cv: '#',
