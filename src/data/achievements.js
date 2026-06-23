@@ -4,6 +4,7 @@ import itEssentialsPdf from '../assets/documents/pdf/IT_Essentials_certificate_j
 import teensIntPdf from '../assets/documents/pdf/JEFRY ANDRÉ CRUZ YUMÁN TeensInt.pdf?url'
 import reconocimiento1Pdf from '../assets/documents/pdf/reconocimiento1.pdf?url'
 import reconocimiento2Pdf from '../assets/documents/pdf/reconocimiento2.pdf?url'
+import induccionJava from '../assets/documents/pdf/Introduccion_a_Java.pdf?url'
 
 //imagens para los preview
 import b1 from '../assets/img/achievements/b1.png'
@@ -12,19 +13,10 @@ import reconocimiento from '../assets/img/achievements/reconocimiento.png'
 import reconocimiento2 from '../assets/img/achievements/reconocimiento2.png'
 import cetificadoPowerBIImg from '../assets/img/achievements/certificado-PowerBI-jcruz.png'
 import ITessentialsImg from '../assets/img/achievements/ITEssential.png'
-
+import JavaImg from '../assets/img/achievements/Java.png'
 
 export const achievements = [
-  {
-    title: 'Certificacion B1',
-    issuer: 'E4CC Academy',
-    date: '2026',
-    description:
-      'Certificado de nivel B1 en inglés, demostrando habilidades de comunicación y comprensión en situaciones cotidianas.',
-    image: b1,
-    document: e4cc,
-    fileName: 'certificacion-e4cc.pdf',
-  },
+
   {
     title: 'IT Essentials',
     issuer: 'Cisco Networking Academy',
@@ -34,6 +26,26 @@ export const achievements = [
     image: ITessentialsImg,
     document: itEssentialsPdf,
     fileName: 'it-essentials.pdf',
+  },
+  {
+    title: 'Induccion a Java',
+    issuer: 'Java',
+    date: '2024',
+    description:
+      'Certificado de induccion a Java, demostrando habilidades de programacion y comprension en el lenguaje de programacion Java.',
+    image: JavaImg,
+    document: induccionJava,
+    fileName: 'Introduccion-a-Java.pdf',
+  },
+  {
+    title: 'Reconocimiento academico 1',
+    issuer: 'Formacion tecnica',
+    date: '2025',
+    description:
+      'Reconocimiento por participacion, desempeno o cumplimiento destacado en actividades academicas.',
+    image: reconocimiento,
+    document: reconocimiento1Pdf,
+    fileName: 'reconocimiento-academico-1.pdf',
   },
   {
     title: 'Teens Intermediate',
@@ -46,6 +58,16 @@ export const achievements = [
     fileName: 'teens-int.pdf',
   },
   {
+    title: 'Certificacion B1',
+    issuer: 'E4CC Academy',
+    date: '2026',
+    description:
+      'Certificado de nivel B1 en inglés, demostrando habilidades de comunicación y comprensión en situaciones cotidianas.',
+    image: b1,
+    document: e4cc,
+    fileName: 'certificacion-e4cc.pdf',
+  },
+  {
     title: 'Certificado Power BI',
     issuer: 'Power BI',
     date: '2026',
@@ -54,16 +76,6 @@ export const achievements = [
     image: cetificadoPowerBIImg,
     document: certificadoPowerBI,
     fileName: 'certificado-power-bi.png',
-  },
-  {
-    title: 'Reconocimiento academico 1',
-    issuer: 'Formacion tecnica',
-    date: '2025',
-    description:
-      'Reconocimiento por participacion, desempeno o cumplimiento destacado en actividades academicas.',
-    image: reconocimiento,
-    document: reconocimiento1Pdf,
-    fileName: 'reconocimiento-academico-1.pdf',
   },
   {
     title: 'Reconocimiento academico 2',

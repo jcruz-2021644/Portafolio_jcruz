@@ -1,3 +1,5 @@
+import cvPdf from '../assets/documents/pdf/cv_jefry_andre_cruz_yuman.pdf'
+
 export const personalInfo = {
   name: 'Jefry André Cruz Yumán',
   role: 'Desarrollador web backend/frontend en formación',
@@ -20,6 +22,6 @@ export const personalInfo = {
     email: 'mailto:jefryyu67@gmail.com',
     linkedin: 'https://www.linkedin.com/in/jefry-cruz',
     computrabajo: 'https://www.computrabajo.com.gt/',
-    cv: '#',
+    cv: cvPdf,
   },
 }

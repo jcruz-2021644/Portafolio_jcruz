@@ -1,6 +1,8 @@
-import { ArrowRight, Download, Sparkles } from 'lucide-react'
+import { Sparkles } from 'lucide-react'
 import jcruz from '../../assets/img/profile/yo_chumpa_kinal.jpeg'
 import { personalInfo } from '../../data/personalInfo.js'
+import CvDownloadButton from '../../components/Buttons/CvDownloadButton.jsx'
+import ExploreButton from '../../components/Buttons/ExploreButton.jsx'
 import './Hero.css'
 
 function Hero() {
@@ -16,18 +18,9 @@ function Hero() {
           {personalInfo.phrase}
         </p>
         <div className="hero-section__actions" aria-label="Acciones principales">
-          <a className="button button--primary" href="#proyectos">
-            Ver proyectos
-            <ArrowRight aria-hidden="true" size={18} />
-          </a>
-          <a className="button button--ghost" href={personalInfo.links.cv}>
-            <Download aria-hidden="true" size={18} />
-            CV virtual
-          </a>
-          <a className="button button--coral" href="#contacto">
-            Contactarme
-            <ArrowRight aria-hidden="true" size={18} />
-          </a>
+          <ExploreButton href="#proyectos">Ver proyectos</ExploreButton>
+          <CvDownloadButton href={personalInfo.links.cv} />
+          <ExploreButton href="#contacto">Contactarme</ExploreButton>
         </div>
         <div className="hero-section__stats" aria-label="Resumen profesional">
           <span><strong>06+</strong> tecnologias</span>
