@@ -9,6 +9,7 @@ export function BentoGridItem({
   description,
   header,
   icon,
+  action,
   containerClassName = '',
   className = '',
 }) {
@@ -23,6 +24,7 @@ export function BentoGridItem({
           <h3>{title}</h3>
           <p>{description}</p>
         </div>
+        {action}
       </div>
     </article>
   )

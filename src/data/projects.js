@@ -1,6 +1,3 @@
-import miLogo from '../assets/img/profile/mi_logo.png'
-import yoChumpa from '../assets/img/profile/yo_chumpa_kinal.jpeg'
-
 
 //proyecto de agenda web
 import login_agenda from '../assets/img/projects/login_agenda.png'

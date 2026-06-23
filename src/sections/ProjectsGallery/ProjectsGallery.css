@@ -2,64 +2,111 @@
   padding-top: 48px;
 }
 
-.project-mockup {
-  min-height: 180px;
+.snapshot-card .bento-grid-item__header {
+  min-height: 210px;
+  padding: 12px;
+}
+
+.snapshot-card__media {
+  position: relative;
+  height: 100%;
+  min-height: 210px;
+  margin: 0;
+  overflow: hidden;
   border: 1px solid rgba(0, 169, 232, 0.16);
   border-radius: 8px;
-  padding: 12px;
-  display: grid;
-  grid-template-rows: auto 1fr;
-  gap: 12px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.snapshot-card__media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 520ms ease;
+}
+
+.snapshot-card:hover .snapshot-card__media img {
+  transform: scale(1.045);
+}
+
+.snapshot-card__media::after {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
   background:
-    radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.55), transparent 24%),
-    linear-gradient(135deg, rgba(0, 169, 232, 0.28), rgba(0, 212, 199, 0.18));
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.36);
+    linear-gradient(180deg, transparent 46%, rgba(3, 16, 25, 0.5)),
+    radial-gradient(circle at 18% 12%, rgba(0, 169, 232, 0.22), transparent 28%);
+  content: '';
 }
 
-.project-mockup__topbar {
-  display: flex;
-  gap: 6px;
-}
-
-.project-mockup__topbar span {
-  width: 9px;
-  height: 9px;
+.snapshot-card__media figcaption {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.34);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.88);
+  padding: 6px 10px;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 900;
+  background: rgba(6, 29, 43, 0.62);
+  backdrop-filter: blur(12px);
 }
 
-.project-mockup__screen {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  grid-template-rows: repeat(2, minmax(46px, 1fr));
-  gap: 10px;
+.snapshot-card .bento-grid-item__body {
+  position: relative;
+  grid-template-columns: 1fr;
+  padding-top: 2px;
+  padding-right: 68px;
 }
 
-.project-mockup__screen span {
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.72);
-  box-shadow: 0 12px 28px rgba(7, 42, 59, 0.08);
+.snapshot-card .bento-grid-item__icon {
+  display: none;
 }
 
-.project-mockup__screen span:first-child {
-  grid-row: span 2;
-  background: linear-gradient(150deg, rgba(7, 42, 59, 0.9), rgba(0, 169, 232, 0.78));
+.snapshot-card__code-link {
+  position: absolute;
+  right: 18px;
+  bottom: 20px;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(0, 169, 232, 0.22);
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  background: rgba(0, 169, 232, 0.08);
+  text-decoration: none;
+  box-shadow: 0 12px 26px rgba(0, 169, 232, 0.1);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    color 180ms ease;
 }
 
-.project-mockup__screen span:nth-child(3) {
-  background: linear-gradient(135deg, rgba(255, 114, 94, 0.78), rgba(255, 255, 255, 0.72));
+.snapshot-card__code-link span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
 }
 
-.project-mockup--profile .project-mockup__screen,
-.project-mockup--responsive .project-mockup__screen {
-  grid-template-columns: 0.68fr 1fr;
+.snapshot-card__code-link:hover,
+.snapshot-card__code-link:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(0, 169, 232, 0.42);
+  color: #fff;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-2));
 }
 
-.project-mockup--skills .project-mockup__screen span,
-.project-mockup--system .project-mockup__screen span {
-  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-2));
-}
-
-.project-mockup--code .project-mockup__screen span {
-  background: rgba(7, 42, 59, 0.88);
+@media (max-width: 900px) {
+  .snapshot-card .bento-grid-item__header,
+  .snapshot-card__media {
+    min-height: 190px;
+  }
 }

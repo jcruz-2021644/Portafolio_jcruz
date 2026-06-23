@@ -1,97 +1,101 @@
-import { BriefcaseBusiness, Code2, Gauge, Layers3, MonitorSmartphone, ShieldCheck } from 'lucide-react'
+import { Code2 } from 'lucide-react'
+import kinalClothes from '../../assets/img/projects/Kinal_Clothes.jpeg'
+import restaurante from '../../assets/img/projects/restaurante.png'
+import sistemaBancario from '../../assets/img/projects/sistema_bancario.png'
+import synapse from '../../assets/img/projects/synapse.jpeg'
+import veterinaria from '../../assets/img/projects/veterinaria.png'
 import { BentoGrid, BentoGridItem } from '@/components/ui/bento-grid'
 import './ProjectsGallery.css'
 
-const items = [
+const projectSnapshots = [
+  {
+    title: 'Synapse',
+    year: '2026',
+    description:
+      'Proyecto similar a Visual Studio Code pero en linea creado por: Jjimenez, Jcruz, Rrodriguez, Rcana y Aroquel los cuales vieron las deficiencias en el area de informatica para su institucion.',
+    image: synapse,
+    containerClassName: 'md:col-span-2',
+    repository: 'https://github.com/jjimenez-2021647/SynapseCode',
+  },
   {
     title: 'Sistema Bancario',
+    year: '2026',
     description:
-      'Vista administrativa para cuentas, usuarios y operaciones con lectura rapida de estados.',
-    icon: <ShieldCheck />,
-    containerClassName: 'md:col-span-2',
-    variant: 'bank',
-  },
-  {
-    title: 'Perfil profesional',
-    description:
-      'Seccion personal con datos clave, contacto y enfoque profesional para reclutadores.',
-    icon: <BriefcaseBusiness />,
+      'Aplicacion orientada a gestionar un banco con interfaz web y mobile para el usuario y el administrador del banco, con funcionalidades de transacciones, cuentas, reportes, etc.',
+    image: sistemaBancario,
     containerClassName: 'md:col-span-1',
-    variant: 'profile',
+    repository: 'https://github.com/rcana-2021639/grupo6-sistema-bancario-Frontend',
   },
   {
-    title: 'Habilidades visuales',
+    title: 'Restaurante',
+    year: '2026',
     description:
-      'Grafica de progreso para mostrar fortalezas tecnicas sin saturar de texto.',
-    icon: <Gauge />,
+      'Aplicacion orientada al manejo de varios restaurantes con una interfaz en la web y mobile para el usuario y el administrador del restaurante, con funcionalidades de menu, pedidos, reportes, etc.',
+    image: restaurante,
     containerClassName: 'md:col-span-1',
-    variant: 'skills',
+    repository: 'https://github.com/rrodriguez-2023342/Proyecto_Restaurantes',
   },
   {
-    title: 'Codigo organizado',
+    title: 'Kinal Clothes',
+    year: '2025',
     description:
-      'Componentes separados, datos centralizados y estilos faciles de mantener.',
-    icon: <Code2 />,
+      'Propuesta para una tienda de ropa en linea, con interfaz web para el usuario y el administrador de la tienda, con funcionalidades de catalogo, carrito de compras, reportes, etc.',
+    image: kinalClothes,
     containerClassName: 'md:col-span-1',
-    variant: 'code',
+    repository: 'https://github.com/jjimenez-2021647/KinalitosClothes',
   },
   {
-    title: 'Responsive real',
+    title: 'Veterinaria',
+    year: '2025',
     description:
-      'Layouts preparados para escritorio, tablet y telefono sin perder jerarquia.',
-    icon: <MonitorSmartphone />,
-    containerClassName: 'md:col-span-1 md:row-span-2',
-    variant: 'responsive',
-  },
-  {
-    title: 'Sistema visual',
-    description:
-      'Paleta celeste, acua, blanco y coral con sombras, lineas y microinteracciones.',
-    icon: <Layers3 />,
-    containerClassName: 'md:col-span-2',
-    variant: 'system',
+      'Aplicacion orientada a la gestion de una veterinaria con interfaz grafica para el usuario y el administrador de la veterinaria, con funcionalidades de citas, historial medico, reportes, etc.',
+    image: veterinaria,
+    containerClassName: 'md:col-span-1 ',
+    repository: 'https://github.com/jcruz-2021644/Veterinaria_IN5BM',
   },
 ]
 
-function ProjectMockup({ variant }) {
+function SnapshotHeader({ item }) {
   return (
-    <div className={`project-mockup project-mockup--${variant}`}>
-      <div className="project-mockup__topbar">
-        <span />
-        <span />
-        <span />
-      </div>
-      <div className="project-mockup__screen">
-        <span />
-        <span />
-        <span />
-        <span />
-      </div>
-    </div>
+    <figure className="snapshot-card__media">
+      <img src={item.image} alt={`Captura del proyecto ${item.title}`} />
+      <figcaption>{item.year}</figcaption>
+    </figure>
   )
 }
 
 function ProjectsGallery() {
   return (
-    <section className="gallery-section section" aria-labelledby="gallery-title">
+    <section className="gallery-section section" id="capturas" aria-labelledby="gallery-title">
       <div className="section-heading" data-animate>
-        <p className="eyebrow">Vista rapida</p>
-        <h2 id="gallery-title">Capturas conceptuales</h2>
+        <p className="eyebrow">Proyectos tecnicos</p>
+        <h2 id="gallery-title">Proyectos Robustos y Escalables</h2>
         <p>
-          Espacios visuales listos para reemplazarse por capturas reales de los
-          proyectos cuando tengas tus imagenes finales.
+        Una seleccion visualizacion rapida de proyectos robustos y escalables, demostrando habilidades en desarrollo web y diseño de interfaces. Cada proyecto refleja un enfoque en la experiencia del usuario y la aplicacion de buenas practicas de desarrollo.
         </p>
       </div>
 
       <BentoGrid>
-        {items.map((item) => (
+        {projectSnapshots.map((item) => (
           <BentoGridItem
             key={item.title}
             title={item.title}
             description={item.description}
-            icon={item.icon}
             containerClassName={item.containerClassName}
-            header={<ProjectMockup variant={item.variant} />}
+            className="snapshot-card"
+            header={<SnapshotHeader item={item} />}
+            action={
+              <a
+                className="snapshot-card__code-link"
+                href={item.repository}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`Ver codigo de ${item.title}`}
+              >
+                <Code2 aria-hidden="true" size={18} />
+                <span>&lt;/&gt;</span>
+              </a>
+            }
           />
         ))}
       </BentoGrid>
