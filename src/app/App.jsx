@@ -5,6 +5,7 @@ import Hero from '../sections/Hero/Hero.jsx'
 import About from '../sections/About/About.jsx'
 import Projects from '../sections/Projects/Projects.jsx'
 import ProjectsGallery from '../sections/ProjectsGallery/ProjectsGallery.jsx'
+import Achievements from '../sections/Achievements/Achievements.jsx'
 import Connect from '../sections/Connect/Connect.jsx'
 import { Particles } from '../components/ui/particles.jsx'
 import { useScrollAnimation } from '../hooks/useScrollAnimation.js'
@@ -29,6 +30,7 @@ function App() {
         <About />
         <Projects />
         <ProjectsGallery />
+        <Achievements />
         <Connect />
       </main>
       <Footer />

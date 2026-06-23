@@ -55,10 +55,15 @@ function Connect() {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [status, setStatus] = useState('idle')
   const [statusMessage, setStatusMessage] = useState('')
+  const [sentAt, setSentAt] = useState('')
 
   const openModal = () => {
     setStatus('idle')
     setStatusMessage('')
+    setSentAt(new Date().toLocaleString('es-GT', {
+      dateStyle: 'medium',
+      timeStyle: 'short',
+    }))
     setIsModalOpen(true)
   }
 
@@ -153,15 +158,25 @@ function Connect() {
 
             <form className="contact-form" ref={formRef} onSubmit={handleSubmit}>
               <input type="hidden" name="to_email" value={import.meta.env.VITE_CONTACT_TO_EMAIL || personalInfo.email} />
-              <input type="hidden" name="from_name" value="Visitante del portafolio" />
-              <input type="hidden" name="reply_to" value={personalInfo.email} />
-              <input type="hidden" name="subject" value="Nuevo mensaje desde el portafolio" />
+              <input type="hidden" name="time" value={sentAt} />
+              <label>
+                Nombre
+                <input name="name" type="text" placeholder="Tu nombre" required />
+              </label>
+              <label>
+                Correo electronico
+                <input name="email" type="email" placeholder="tu@email.com" required />
+              </label>
+              <label>
+                Asunto
+                <input name="subject" type="text" placeholder="Oportunidad, consulta o proyecto" required />
+              </label>
               <label>
                 Mensaje
                 <textarea
                   name="message"
-                  rows="7"
-                  placeholder="Escribe aqui tu nombre, tu correo y tu mensaje. Ejemplo: Hola, soy Juan, mi correo es juan@email.com y quiero contactarte por..."
+                  rows="5"
+                  placeholder="Escribe tu mensaje..."
                   required
                 />
               </label>
