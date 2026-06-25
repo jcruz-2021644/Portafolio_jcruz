@@ -20,10 +20,10 @@ function Hero() {
         <div className="hero-section__actions" aria-label="Acciones principales">
           <ExploreButton href="#proyectos">Ver proyectos</ExploreButton>
           <CvDownloadButton href={personalInfo.links.cv} />
-          <ExploreButton href="#contacto">Contactarme</ExploreButton>
+          <ExploreButton href="#contacto">Contacto</ExploreButton>
         </div>
         <div className="hero-section__stats" aria-label="Resumen profesional">
-          <span><strong>06+</strong> tecnologias</span>
+          <span><strong>06+</strong> tecnologías</span>
           <span><strong>03</strong> proyectos alojados</span>
           <span><strong>100%</strong> responsive</span>
         </div>

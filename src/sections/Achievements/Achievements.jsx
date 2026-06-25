@@ -41,7 +41,7 @@ function Achievements() {
         <h2 id="achievements-title">Logros y certificaciones</h2>
         <p>
           Espacio para mostrar certificaciones, reconocimientos y documentos
-          descargables que respalden mi formacion tecnica.
+          descargables que respalden mi formación técnica.
         </p>
       </div>
 

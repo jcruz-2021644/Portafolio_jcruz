@@ -22,34 +22,34 @@ export const achievements = [
     issuer: 'Cisco Networking Academy',
     date: '2024',
     description:
-      'Conocimientos de hardware, software, soporte tecnico, mantenimiento y solucion de problemas.',
+      'Conocimientos de hardware, software, soporte técnico, mantenimiento y solución de problemas.',
     image: ITessentialsImg,
     document: itEssentialsPdf,
     fileName: 'it-essentials.pdf',
   },
   {
-    title: 'Induccion a Java',
+    title: 'Inducción a Java',
     issuer: 'Java',
     date: '2024',
     description:
-      'Certificado de induccion a Java, demostrando habilidades de programacion y comprension en el lenguaje de programacion Java.',
+      'Certificado de inducción a Java, demostrando habilidades de programación y comprensión en el lenguaje de programación Java.',
     image: JavaImg,
     document: induccionJava,
     fileName: 'Introduccion-a-Java.pdf',
   },
   {
-    title: 'Reconocimiento academico 1',
-    issuer: 'Formacion tecnica',
+    title: 'Primer reconocimiento académico',
+    issuer: 'Formación técnica  ',
     date: '2025',
     description:
-      'Reconocimiento por participacion, desempeno o cumplimiento destacado en actividades academicas.',
+      'Reconocimiento por participación, desempeño y cumplimiento destacado en actividades académicas.',
     image: reconocimiento,
     document: reconocimiento1Pdf,
     fileName: 'reconocimiento-academico-1.pdf',
   },
   {
     title: 'Teens Intermediate',
-    issuer: 'Programa academico',
+    issuer: 'Programa académico',
     date: '2026',
     description:
       'Certificado de nivel intermedio en inglés, demostrando habilidades de comunicación y comprensión en situaciones cotidianas.',
@@ -58,7 +58,7 @@ export const achievements = [
     fileName: 'teens-int.pdf',
   },
   {
-    title: 'Certificacion B1',
+    title: 'Certificación B1',
     issuer: 'E4CC Academy',
     date: '2026',
     description:
@@ -78,11 +78,11 @@ export const achievements = [
     fileName: 'certificado-power-bi.png',
   },
   {
-    title: 'Reconocimiento academico 2',
-    issuer: 'Formacion tecnica',
+    title: 'Segundo reconocimiento académico',
+    issuer: 'Formación técnica',
     date: '2026',
     description:
-      'Segundo reconocimiento agregado al portafolio como respaldo de crecimiento y constancia.',
+      'Segundo reconocimiento académico agregado al portafolio como respaldo de crecimiento y constancia.',
     image: reconocimiento2,
     document: reconocimiento2Pdf,
     fileName: 'reconocimiento-academico-2.pdf',

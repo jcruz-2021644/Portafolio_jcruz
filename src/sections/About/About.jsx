@@ -9,10 +9,10 @@ function About() {
     <section className="about-section section" id="sobre-mi" aria-labelledby="about-title">
       <div className="section-heading" data-animate>
         <p className="eyebrow">Perfil</p>
-        <h2 id="about-title">Sobre mi</h2>
+        <h2 id="about-title">Sobre mí</h2>
         <p>
           Una vista clara de quien soy, como trabajo y que puedo aportar como
-          desarrollador web en formacion.
+          desarrollador web en formación.
         </p>
       </div>
 

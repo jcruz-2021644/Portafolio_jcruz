@@ -12,7 +12,7 @@ const projectSnapshots = [
     title: 'Synapse',
     year: '2026',
     description:
-      'Proyecto similar a Visual Studio Code pero en linea creado por: Jjimenez, Jcruz, Rrodriguez, Rcana y Aroquel los cuales vieron las deficiencias en el area de informatica para su institucion.',
+      'Proyecto similar a Visual Studio Code pero en línea creado por: Jjimenez, Jcruz, Rrodriguez, Rcana y Aroquel, los cuales vieron las deficiencias en el área de informática para su institución.',
     image: synapse,
     containerClassName: 'md:col-span-2',
     repository: 'https://github.com/jjimenez-2021647/SynapseCode',
@@ -21,7 +21,7 @@ const projectSnapshots = [
     title: 'Sistema Bancario',
     year: '2026',
     description:
-      'Aplicacion orientada a gestionar un banco con interfaz web y mobile para el usuario y el administrador del banco, con funcionalidades de transacciones, cuentas, reportes, etc.',
+      'Aplicación orientada a gestionar un banco con interfaz web y mobile para el usuario y el administrador del banco, con funcionalidades de transacciones, cuentas, reportes, etc.',
     image: sistemaBancario,
     containerClassName: 'md:col-span-1',
     repository: 'https://github.com/rcana-2021639/grupo6-sistema-bancario-Frontend',
@@ -30,7 +30,7 @@ const projectSnapshots = [
     title: 'Restaurante',
     year: '2026',
     description:
-      'Aplicacion orientada al manejo de varios restaurantes con una interfaz en la web y mobile para el usuario y el administrador del restaurante, con funcionalidades de menu, pedidos, reportes, etc.',
+      'Aplicación orientada al manejo de varios restaurantes con una interfaz en la web y mobile para el usuario y el administrador del restaurante, con funcionalidades de menú, pedidos, reportes, etc.',
     image: restaurante,
     containerClassName: 'md:col-span-1',
     repository: 'https://github.com/rrodriguez-2023342/Proyecto_Restaurantes',
@@ -39,7 +39,7 @@ const projectSnapshots = [
     title: 'Kinal Clothes',
     year: '2025',
     description:
-      'Propuesta para una tienda de ropa en linea, con interfaz web para el usuario y el administrador de la tienda, con funcionalidades de catalogo, carrito de compras, reportes, etc.',
+      'Propuesta para una tienda de ropa en línea, con interfaz web para el usuario y el administrador de la tienda, con funcionalidades de catálogo, carrito de compras, reportes, etc.',
     image: kinalClothes,
     containerClassName: 'md:col-span-1',
     repository: 'https://github.com/jjimenez-2021647/KinalitosClothes',
@@ -48,7 +48,7 @@ const projectSnapshots = [
     title: 'Veterinaria',
     year: '2025',
     description:
-      'Aplicacion orientada a la gestion de una veterinaria con interfaz grafica para el usuario y el administrador de la veterinaria, con funcionalidades de citas, historial medico, reportes, etc.',
+      'Aplicación orientada a la gestión de una veterinaria con interfaz gráfica para el usuario y el administrador de la veterinaria, con funcionalidades de citas, historial médico, reportes, etc.',
     image: veterinaria,
     containerClassName: 'md:col-span-1 ',
     repository: 'https://github.com/jcruz-2021644/Veterinaria_IN5BM',
@@ -68,10 +68,10 @@ function ProjectsGallery() {
   return (
     <section className="gallery-section section" id="capturas" aria-labelledby="gallery-title">
       <div className="section-heading" data-animate>
-        <p className="eyebrow">Proyectos tecnicos</p>
+        <p className="eyebrow">Proyectos técnicos</p>
         <h2 id="gallery-title">Proyectos Robustos y Escalables</h2>
         <p>
-        Una seleccion visualizacion rapida de proyectos robustos y escalables, demostrando habilidades en desarrollo web y diseño de interfaces. Cada proyecto refleja un enfoque en la experiencia del usuario y la aplicacion de buenas practicas de desarrollo.
+        Una selección para la visualización rápida de proyectos robustos y escalables, demostrando habilidades en desarrollo web y diseño de interfaces. Cada proyecto refleja un enfoque en la experiencia del usuario y la aplicación de buenas prácticas de desarrollo.
         </p>
       </div>
 
@@ -90,7 +90,7 @@ function ProjectsGallery() {
                 href={item.repository}
                 target="_blank"
                 rel="noreferrer"
-                aria-label={`Ver codigo de ${item.title}`}
+                aria-label={`Ver código de ${item.title}`}
               >
                 <Code2 aria-hidden="true" size={18} />
                 <span>&lt;/&gt;</span>

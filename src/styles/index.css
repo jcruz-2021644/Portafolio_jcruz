@@ -160,7 +160,7 @@ ol {
   pointer-events: none;
   border-radius: inherit;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.7), transparent 34%),
+    linear-gradient(135deg, rgba(177, 248, 253, 0.3), transparent 20%),
     radial-gradient(circle at 90% 12%, rgba(0, 212, 199, 0.14), transparent 30%);
   content: '';
 }

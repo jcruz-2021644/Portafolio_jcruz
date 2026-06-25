@@ -106,8 +106,8 @@ function Connect() {
           <p className="eyebrow">Contacto</p>
           <h2 id="contact-title">Construyamos algo juntos</h2>
           <p>
-            Estoy listo para seguir aprendiendo, participar en practicas y aportar
-            en proyectos donde el orden, la comunicacion y el diseno importen.
+            Estoy listo para seguir aprendiendo, participar en prácticas y aportar
+            en proyectos donde el orden, la comunicación y el diseño importen.
           </p>
         </div>
 

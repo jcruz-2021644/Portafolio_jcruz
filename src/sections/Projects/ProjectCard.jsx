@@ -47,7 +47,7 @@ function ProjectCard({ project }) {
         </a>
         <a href={project.repository}>
           <Code2 aria-hidden="true" size={16} />
-          Codigo
+          Código
           <ArrowUpRight aria-hidden="true" size={15} />
         </a>
       </div>

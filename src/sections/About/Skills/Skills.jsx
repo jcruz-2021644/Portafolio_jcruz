@@ -8,11 +8,11 @@ function Skills() {
       <div className="skills__heading">
         <div>
           <p className="skills__kicker">Banco de skills</p>
-          <h3>Habilidades tecnicas y herramientas</h3>
+          <h3>Habilidades técnicas y herramientas</h3>
         </div>
         <p>
-          Clasificadas por area para mostrar con claridad mi nivel actual,
-          herramientas usadas y tecnologias en proceso.
+          Clasificadas por área para mostrar con claridad mi nivel actual,
+          herramientas usadas y tecnologías en proceso.
         </p>
       </div>
 

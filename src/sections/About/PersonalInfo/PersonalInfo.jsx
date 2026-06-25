@@ -15,7 +15,7 @@ function PersonalInfo() {
           <dd>{personalInfo.age}</dd>
         </div>
         <div>
-          <dt>Ubicacion</dt>
+          <dt>Ubicación</dt>
           <dd>{personalInfo.location}</dd>
         </div>
         <div>
@@ -25,7 +25,7 @@ function PersonalInfo() {
           </dd>
         </div>
         <div>
-          <dt>Formacion</dt>
+          <dt>Formación</dt>
           <dd>{personalInfo.education}</dd>
         </div>
         <div>

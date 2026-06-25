@@ -17,32 +17,32 @@ import agencia_viajes3 from '../assets/img/projects/agencia_viajes3.png'
 export const projects = [
   {
     title: 'Agenda de Contactos',
-    category: 'Aplicacion web',
+    category: 'Aplicación web',
     description:
-      'Aplicacion para administrar numeros de telefono y operaciones basicas de una agenda de tareas con tipos de prioridad.',
-    learned: 'Mejore validaciones, separacion de responsabilidades y manejo de flujos de datos.',
+      'Aplicación para administrar números de teléfono y operaciones básicas de una agenda de tareas con tipos de prioridad.',
+    learned: 'Mejoré validaciones, separación de responsabilidades y manejo de flujos de datos.',
     tags: ['JavaScript', 'HTML', 'CSS', 'Validaciones'],
     images: [login_agenda, home_agenda, add_agenda],
     link: 'https://agenda-web-jcruz.netlify.app/',
     repository: 'https://github.com/jcruz-2021644/Laboratorio_1_Agenda_Web_2026',
   },
   {
-    title: 'Sobre Mi y Rediseño de Kinal',
+    title: 'Sobre mí y Rediseño de Kinal',
     category: 'Sitio web',
     description:
-      'Sitio responsivo para presentar mi perfil, hobbies y mi propuesta al rediseño de kinal.',
-    learned: 'Fortaleci composicion visual, componentes reutilizables y diseno responsive.',
+      'Sitio responsivo para presentar mi perfil, hobbies y mi propuesta al rediseño de Kinal.',
+    learned: 'Fortalecí la composicion visual, componentes reutilizables y diseño responsive.',
     tags: ['JavaScript', 'HTML', 'CSS'],
     images: [redisenio_kinal, redisenio_kinal2, redisenio_kinal3],
     link: 'https://resiseno-kinal-pw.netlify.app/',
     repository: 'https://github.com/jcruz-2021644/Laboratorio_pagina_web',
   },
   {
-    title: 'Agencia de Viajes',
+    title: 'Agencia de viajes',
     category: 'Sitio web',
     description:
       'Sitio web visual para una agencia de viajes.',
-    learned: 'Aprendi a utilizar diseño responsive y componentes reutilizables.',
+    learned: 'Aprendí a utilizar diseño responsive y componentes reutilizables.',
     tags: ['JavaScript', 'HTML', 'CSS'],
     images: [agencia_viajes, agencia_viajes2, agencia_viajes3],
     link: 'https://agencias-de-viajes-jcruz.netlify.app/',

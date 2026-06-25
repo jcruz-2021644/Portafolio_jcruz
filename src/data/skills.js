@@ -31,8 +31,8 @@ export const skillGroups = [
     ],
   },
   {
-    title: 'Lenguajes de programacion',
-    description: 'Lenguajes principales usados en proyectos academicos y personales.',
+    title: 'Lenguajes de programación',
+    description: 'Lenguajes principales usados en proyectos académicos y personales.',
     skills: [
       { name: 'Java', level: 70, logo: 'JV', icon: 'java', color: '#f89820' },
       { name: 'JavaScript', level: 30, logo: 'JS', icon: 'javascript', color: '#f7df1e', dark: true },
@@ -61,7 +61,7 @@ export const skillGroups = [
       { name: 'Visual Studio Code', level: 80, logo: 'VS', color: '#007acc' },
       { name: 'pgAdmin 4', level: 25, logo: 'PA', icon: 'postgres', color: '#336791' },
       { name: 'Android Studio', level: 18, status: 'En proceso', logo: 'AS', icon: 'android', color: '#3ddc84', dark: true },
-      { name: 'Metodologia Scrum', level: 70, logo: 'SC', color: '#00a9e8' },
+      { name: 'Metodología Scrum', level: 70, logo: 'SC', color: '#00a9e8' },
     ],
   },
 ]

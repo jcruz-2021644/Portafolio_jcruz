@@ -5,7 +5,7 @@ import './Navbar.css'
 
 const links = [
   { href: '#inicio', label: 'Inicio' },
-  { href: '#sobre-mi', label: 'Sobre mi' },
+  { href: '#sobre-mi', label: 'Sobre mí' },
   { href: '#proyectos', label: 'Proyectos A.' },
   { href: '#capturas', label: 'Proyectos R.' },
   { href: '#logros', label: 'Logros' },

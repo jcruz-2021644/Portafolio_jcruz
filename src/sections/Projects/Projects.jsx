@@ -6,7 +6,7 @@ function Projects() {
   return (
     <section className="projects-section section" id="proyectos" aria-labelledby="projects-title">
       <div className="section-heading" data-animate>
-        <p className="eyebrow">Trabajo reciente</p>
+        <p className="eyebrow">Trabajo alojados</p>
         <h2 id="projects-title">Proyectos</h2>
       </div>
 
