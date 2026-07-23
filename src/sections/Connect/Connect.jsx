@@ -34,6 +34,14 @@ const socialLinks = [
       'M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.9c-2.78.62-3.37-1.2-3.37-1.2-.45-1.19-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.99c.85 0 1.71.12 2.51.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.95.68 1.92v2.77c0 .28.18.6.69.5A10.24 10.24 0 0 0 22 12.26C22 6.58 17.52 2 12 2z',
   },
   {
+    id: 'linkedin',
+    label: 'LinkedIn',
+    href: personalInfo.links.linkedin,
+    viewBox: '0 0 640 640',
+    path:
+      'M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM165 266.2L231.5 266.2L231.5 480L165 480L165 266.2zM236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160C219.5 160 236.7 177.2 236.7 198.5zM413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480L413.9 480z'
+  },
+  {
     id: 'whatsapp',
     label: 'WhatsApp',
     href: personalInfo.links.whatsapp,
@@ -42,9 +50,9 @@ const socialLinks = [
   },
 ]
 
-function SocialIcon({ path }) {
+function SocialIcon({ path, viewBox = '0 0 24 24' }) {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
+    <svg viewBox={viewBox} aria-hidden="true">
       <path d={path} />
     </svg>
   )
@@ -122,7 +130,7 @@ function Connect() {
                   aria-label={link.label}
                   onClick={openModal}
                 >
-                  <SocialIcon path={link.path} />
+                  <SocialIcon path={link.path} viewBox={link.viewBox} />
                   <span>{link.label}</span>
                 </button>
               ) : (
@@ -134,7 +142,7 @@ function Connect() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <SocialIcon path={link.path} />
+                  <SocialIcon path={link.path} viewBox={link.viewBox} />
                   <span>{link.label}</span>
                 </a>
               )

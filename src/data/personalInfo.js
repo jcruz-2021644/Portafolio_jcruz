@@ -22,7 +22,7 @@ export const personalInfo = {
     facebook: 'https://www.facebook.com/jefry.yuman/',
     whatsapp: 'https://wa.link/b3n3pa',
     email: 'mailto:jefryyu67@gmail.com',
-    linkedin: 'https://www.linkedin.com/in/jefry-cruz',
+    linkedin: 'https://www.linkedin.com/in/jefry-cruz-b70821421',
     computrabajo: 'https://www.computrabajo.com.gt/',
     cv: cvPdf,
   },
