@@ -314,13 +314,43 @@
   }
 
   .social-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-auto-rows: 86px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 66px;
+    gap: 10px;
     width: 100%;
+  }
+
+  .social-card {
+    grid-template-columns: 34px auto;
+    place-items: initial;
+    align-items: center;
+    justify-content: start;
+    align-content: center;
+    column-gap: 10px;
+    padding-inline: 22px;
+  }
+
+  .social-card span {
+    font-size: 0.82rem;
   }
 
   .social-card--email,
   .social-card--whatsapp {
     grid-column: span 1;
+  }
+
+  .social-card--facebook {
+    border-radius: 42px 42px 8px 8px;
+  }
+
+  .social-card--instagram,
+  .social-card--linkedin,
+  .social-card--email,
+  .social-card--github{
+    border-radius: 8px 8px 8px 8px;
+  }
+
+  .social-card--whatsapp {
+    border-radius: 8px 8px 42px 42px;
   }
 }
